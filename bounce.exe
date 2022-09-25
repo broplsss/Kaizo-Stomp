@@ -1,0 +1,8 @@
+player.on("ground", (l) => {
+		if (l.is("enemy")) {
+			///p  layer.jump(JUMP_FORCE * 1.5);
+			destroy(l);
+			addKaboom(player.pos);
+			play("powerup");
+		}
+	});
